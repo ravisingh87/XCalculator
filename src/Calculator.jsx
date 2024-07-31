@@ -6,7 +6,7 @@ const Calculator = () => {
   const [result, setResult] = useState('');
 
   const handleChange = (val) => {
-    if (val === 'c') {
+    if (val === 'C') {
       setInputVal([]);
       setResult('');
     } else if (val === '=') {
@@ -46,7 +46,7 @@ const Calculator = () => {
           <button onClick={() => handleChange('*')}>*</button>
         </div>
         <div className="num_wrapper">
-          <button onClick={() => handleChange('c')}>c</button>
+          <button onClick={() => handleChange('C')}>C</button>
           <button onClick={() => handleChange('0')}>0</button>
           <button onClick={() => handleChange('=')}>=</button>
           <button onClick={() => handleChange('/')}>/</button>
